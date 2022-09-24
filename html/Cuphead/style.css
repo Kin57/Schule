@@ -1,0 +1,53 @@
+/* Design home */
+body{
+    background-image: url(img/Menu2.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+/* Design Geschichte */
+#GeschichteBackground{
+    background-image: url(img/..);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textBox{
+
+}
+
+
+/* Design Menü */
+#menu{
+    margin: 0;
+    padding: 0%;
+    visibility: hidden;
+}
+
+.menuItem{
+    padding: 2%;
+    width: 20%;
+    height: 5%;
+    flex-direction: left;
+
+    font-size: xx-large;
+    color: wheat;
+    background-color: rgba(255, 255, 255, 0.3);
+}.menuItem:hover{
+    background-color: rgba(150, 150, 150, 0.3);
+}
+
+a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+#button{
+    background: url(/img/menu-button.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
