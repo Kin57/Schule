@@ -11,13 +11,15 @@ body{
 
 /* Design Geschichte */
 #GeschichteBackground{
-    background-image: url(img/..);
+    background-image: url(img/Menu2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .textBox{
-
+    color: white;
+    margin: 10%;
+    font-size: larger;
 }
 
 
@@ -50,4 +52,10 @@ a{
     background: url(/img/menu-button.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 10%;
 }

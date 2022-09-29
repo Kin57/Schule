@@ -5,26 +5,22 @@ public class pyramid {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter height of pyramid: ");
         int height = scanner.nextInt();
-        buildPyramid(height);
+        buildPyramid(height,0);
     }
 
-    private static void buildPyramid(int height){
-        for(int i = 0; i <= height; i++){
-            for(int j = 0; j < i; j++){
-                System.out.print('*');
-            }
-            System.out.println();
+    private static void buildPyramid(int height, int i){
+        if(i <= height) {
+            printLine(i);
+            i++;
+            buildPyramid(height, i);
         }
-
-        /*
-        if(i < height){
-            for(int j = 0; j < i; j++){
-                System.out.print('*');
-            }
-            System.out.println();
-            buildPyramid(height--, i);
-        }
-        */
         return;
+    }
+
+    private static void printLine(int i){
+        for(int j = 0; j < i; j++){
+            System.out.print("*");
+        }
+        System.out.println();
     }
 }
