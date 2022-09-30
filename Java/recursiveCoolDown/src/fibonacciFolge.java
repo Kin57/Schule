@@ -1,23 +1,17 @@
-import java.util.Scanner;
+import java.sql.SQLOutput;
 
 public class fibonacciFolge{
     public static void main(String[] args){
-        long number1 = 0;
-        long number2 = 1;
-        Scanner scanner = new Scanner(System.in);
-        long cap = scanner.nextInt();
-        calculateFibonacci(number1, number2, cap, 0);
+        System.out.println(calculateFibonacci(14));
     }   
 
-    private static void calculateFibonacci(long number1, long number2, long cap, long itterationCounter){
-        long nextNumber = number1 + number2;
-        itterationCounter++;
+    private static void calculateFibonacci(int pos){
+        int result = 0;
 
-        number1 = number2;
-        number2 = nextNumber;
-        if(itterationCounter < cap){
-            System.out.print(nextNumber + " ");
-            calculateFibonacci(number1, number2, cap, itterationCounter);
+        if(pos > 2) {
+            result += calculateFibonacci(pos - 1) + calculateFibonacci(pos - 2);
+        }else{
+            result += 1;
         }
     }
 }
