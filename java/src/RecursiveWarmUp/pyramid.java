@@ -1,3 +1,5 @@
+package RecursiveWarmUp;
+
 import java.util.Scanner;
 
 public class pyramid {
