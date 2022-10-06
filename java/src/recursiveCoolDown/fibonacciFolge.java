@@ -1,4 +1,4 @@
-package recursiveCoolDown;
+/*package recursiveCoolDown;
 
 public class fibonacciFolge{
     public static void main(String[] args){
@@ -14,4 +14,4 @@ public class fibonacciFolge{
             result += 1;
         }
     }
-}
+}*/
