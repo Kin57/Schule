@@ -1,3 +1,12 @@
+.round{
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
 p{
     text-align: center;
 }
@@ -12,8 +21,8 @@ img{
     text-align: center;
     margin: auto;
     padding: 2%;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 5px solid black;
+    border-radius: 10%;
 }
 
 #score.p{

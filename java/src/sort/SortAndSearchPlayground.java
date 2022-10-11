@@ -44,61 +44,64 @@ public class SortAndSearchPlayground {
 
             System.out.print("Bubble sorted array (" + executionTime + " ns): ");
             printArray(clonedArray);
+            System.out.println();
 
             //Insertion Sort
             clonedArray = cloneArray(originalArray);
             startTime = System.nanoTime();
-            sortByInsertion(clonedArray);
+            //sortByInsertion(clonedArray);
             endTime = System.nanoTime();
             executionTime = endTime - startTime;
             insertionSortTotalTime += executionTime;
 
             System.out.print("Insertion sorted array (" + executionTime + " ns): ");
             printArray(clonedArray);
+            System.out.println();
 
             //Selection Sort
             clonedArray = cloneArray(originalArray);
             startTime = System.nanoTime();
-            sortBySelection(clonedArray);
+            //sortBySelection(clonedArray);
             endTime = System.nanoTime();
             executionTime = endTime - startTime;
             selectionSortTotalTime += executionTime;
 
             System.out.print("Selection sorted array (" + executionTime + " ns): ");
             printArray(clonedArray);
+            System.out.println();
 
             //Search
             //PART 2 >>
-            /*System.out.println("= Searching =");
+            System.out.println("= Searching =");
 
             int needle = generateRandomNumber(arrayLength);
 
             //Linear Unsorted Search
             startTime = System.nanoTime();
-            int needleIndex = searchLinearUnsorted(needle, originalArray);
+            //int needleIndex = searchLinearUnsorted(needle, originalArray);
             endTime = System.nanoTime();
             executionTime = endTime - startTime;
             linearUnsortedSearchTotalTime += executionTime;
 
-            System.out.printf("Found %d at %d in %d ns using linear search in unsorted array.\n", needle, needleIndex, executionTime);
+            //System.out.printf("Found %d at %d in %d ns using linear search in unsorted array.\n", needle, needleIndex, executionTime);
 
             //Linear Sorted Search
             startTime = System.nanoTime();
-            needleIndex = searchLinearSorted(needle, clonedArray);
+            //needleIndex = searchLinearSorted(needle, clonedArray);
             endTime = System.nanoTime();
             executionTime = endTime - startTime;
             linearSortedSearchTotalTime += executionTime;
 
-            System.out.printf("Found %d at %d in %d ns using linear search in sorted array.\n", needle, needleIndex, executionTime);
+            //System.out.printf("Found %d at %d in %d ns using linear search in sorted array.\n", needle, needleIndex, executionTime);
 
             //Binary Search
             startTime = System.nanoTime();
-            needleIndex = searchBinary(needle, clonedArray);
+            int needleIndex = searchBinary(needle, clonedArray, 0, clonedArray.length);
             endTime = System.nanoTime();
             executionTime = endTime - startTime;
             binarySearchTotalTime += executionTime;
 
-            System.out.printf("Found %d at %d in %d ns using binary search in sorted array.\n", needle, needleIndex, executionTime);*/
+            System.out.printf("Found %d at %d in %d ns using binary search in sorted array.\n", needle, needleIndex, executionTime);
             //<< PART 2
         }
 
@@ -111,6 +114,21 @@ public class SortAndSearchPlayground {
         System.out.printf("Linear sorted search average time in ns: %d\n", (linearSortedSearchTotalTime/numberOfExperiments));
         System.out.printf("Binary search average time in ns: %d\n", (binarySearchTotalTime/numberOfExperiments));*/
         //<< PART 2
+    }
+
+    private static int searchBinary(int needle, int[] array, int a, int b) {
+        if(needle > array[(a+b)/2]){
+            return searchBinary(needle,array,(a+b)/2, b);
+        }else if(needle < array[(a+b)/2]){
+            return searchBinary(needle, array, a, (a+b)/2);
+        }else{
+            return array[needle];
+        }
+    }
+
+    private static int generateRandomNumber(int arrayLength) {
+        Random random = new Random();
+        return random.nextInt(0, arrayLength * 2);
     }
 
     private static int[] cloneArray(int[] originalArray) {
