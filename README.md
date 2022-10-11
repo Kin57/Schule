@@ -2,7 +2,7 @@
 
 ## This is a README
 
-- this includes
+this includes:
 - all my school stuff
 - **nothing** else
 
