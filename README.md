@@ -11,6 +11,6 @@ This is the branch for my [java programs](https://github.com/Kin57/Schule/tree/m
 
 This is the branch for my [websites](https://github.com/Kin57/Schule/tree/main/html)
 
-This is the branch for my [java programs](https://github.com/Kin57/Schule/tree/main/java)
+This is the branch for my [fotographs](https://github.com/Kin57/Schule/tree/main/Fotographie)
 
 This is the branch for my [java programs](https://github.com/Kin57/Schule/tree/main/java)
