@@ -1,0 +1,19 @@
+body{
+    background: url(img/64-646702_dice-png-transparent-big-image-image-dice-transparent.png);
+}
+
+#battleground{
+    display: flex;
+}
+
+#player1{
+    margin-right: 50%;
+}
+
+#player1{
+    margin-left: 50%;
+}
+
+#winner{
+    
+}

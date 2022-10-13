@@ -96,7 +96,7 @@ public class SortAndSearchPlayground {
 
             //Binary Search
             startTime = System.nanoTime();
-            int needleIndex = searchBinary(needle, clonedArray, 0, clonedArray.length);
+            int needleIndex = searchBinary(needle, clonedArray, 0, clonedArray.length-1);
             endTime = System.nanoTime();
             executionTime = endTime - startTime;
             binarySearchTotalTime += executionTime;
@@ -117,13 +117,17 @@ public class SortAndSearchPlayground {
     }
 
     private static int searchBinary(int needle, int[] array, int a, int b) {
-        if(needle > array[(a+b)/2]){
-            return searchBinary(needle,array,(a+b)/2, b);
-        }else if(needle < array[(a+b)/2]){
-            return searchBinary(needle, array, a, (a+b)/2);
-        }else{
-            return array[needle];
+        for(int i = 0; needle != array[(a+b)/2]; i++){
+            if(needle < array[(a+b)/2]){
+                a=(a+b)/2;
+            }else{
+                b=(a+b)/2;
+            }
+            if(i > array.length){
+              return -1;
+            }
         }
+        return array[needle];
     }
 
     private static int generateRandomNumber(int arrayLength) {
