@@ -1,5 +1,5 @@
 body{
-    background: url(/);
+    background: url(Würfelbeispiele_6-8_CubeClipArt/diceBackground.jpg);
 }
 
 .round{
@@ -9,6 +9,7 @@ body{
     padding: 2%;
     border: 2px solid black;
     border-radius: 10%;
+    background-color: white;
 }
 
 p{
@@ -27,6 +28,7 @@ img{
     padding: 2%;
     border: 5px solid black;
     border-radius: 10%;
+    background-color: white;
 }
 
 #score p{
