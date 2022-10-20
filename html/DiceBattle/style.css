@@ -6,14 +6,15 @@ body{
     display: flex;
 }
 
-#player1{
-    margin-right: 50%;
-}
-
-#player1{
-    margin-left: 50%;
+#player1 #player2{
+    width: 50%;
 }
 
 #winner{
     
+}
+
+#lifebar1 #lifebar2{
+    width: 40%;
+    height: 5%;
 }
