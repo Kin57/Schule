@@ -1,53 +1,48 @@
-/* Design home */
 body{
-    background-image: url(img/Menu2.png) ;
+    background-image: url(img/Menu.png) ;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-
+    overflow: hidden;
 }
 
-
-/* Design Geschichte */
-#GeschichteBackground{
-    background-image: url(img/..);
+#pressAnyButton{
+    background-image: url(img/pressAnyButton.png) ;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 100;
 }
 
-.textBox{
-
-}
-
-
-/* Design Menü */
 #menu{
     margin: 0;
     padding: 0%;
-    visibility: hidden;
+    visibility: visible;
+    display: flex;
 }
 
 .menuItem{
     padding: 2%;
     width: 20%;
     height: 5%;
-    flex-direction: left;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
 
     font-size: xx-large;
-    color: wheat;
-    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+
+    animation-name: goInvisble;
+    animation-duration: .5s;
+    
+    @keyframes goInvisible {
+        from {visibility: visible;}
+        to {visibility: hidden;}
+    }
 }.menuItem:hover{
-    background-color: rgba(150, 150, 150, 0.3);
+    color: wheat;
 }
 
 a{
     text-decoration: none;
     color: lightgray;
-}
-
-#button{
-    background: url(/img/menu-button.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
