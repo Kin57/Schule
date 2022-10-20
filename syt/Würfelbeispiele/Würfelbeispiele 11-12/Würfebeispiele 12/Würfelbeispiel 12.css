@@ -1,0 +1,57 @@
+body{
+    background: url(Würfelbeispiele_6-8_CubeClipArt/diceBackground.jpg);
+}
+
+#button{
+    margin-left: 44%;
+    width: 12%;
+}
+
+.round{
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+p{
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    margin-left: 45%;
+}
+
+#score{
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#score p{
+    font-weight:bolder ;
+}
+
+.diceFace{
+    justify-content: center;
+    align-items: center;
+}
+
+#input{
+    display: flex;
+}
+
+#name1input{
+    margin-left: 18%;
+}
+#name2input{
+    margin-left: 18%;
+}

@@ -1,0 +1,22 @@
+***WINDOWS INSTALLARIEREN***
+
+
+windows auf installations-Medium, computer, leere Festplatte
+
+
+-Festplatte einfügen
+-DVD anschließen
+-von DVD LAufwerk starten
+-Sprachen ignorieren
+-partitionen löschen und neu erstellen mit 150GB
+-auf primär installieren
+-instalationsende abwarten
+-DVD wird nicht mehr benötigt
+-alles verneinen
+
+
+***WINDOWS KONFIURIEREN***
+
+
+-cura downloaden und starten
+-printer verlinken(creality3d ender-5)

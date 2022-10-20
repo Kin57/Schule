@@ -7,11 +7,24 @@ body{
 
 #pressAnyButton{
     background-image: url(img/pressAnyButton.png) ;
+}
+
+/* Design Geschichte */
+#GeschichteBackground{
+    background-image: url(img/Menu2.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 100;
 }
 
+.textBox{
+    color: white;
+    margin: 10%;
+    font-size: larger;
+}
+
+
+/* Design Menü */
 #menu{
     margin: 0;
     padding: 0%;
@@ -45,4 +58,16 @@ body{
 a{
     text-decoration: none;
     color: lightgray;
+}
+
+#button{
+    background: url(/img/menu-button.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 10%;
 }

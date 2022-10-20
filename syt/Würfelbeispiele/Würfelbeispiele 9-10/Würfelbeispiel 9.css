@@ -1,0 +1,51 @@
+body{
+    background: url(/);
+}
+
+.round{
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+p{
+    text-align: center;
+}
+
+img{
+    width: 10%;
+    margin-left: 45%;
+}
+
+#score{
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+
+#score p{
+    font-weight:bolder ;
+}
+
+.diceFace{
+    justify-content: center;
+    align-items: center;
+    size: 200%;
+}
+
+#input{
+    display: flex;
+}
+
+#name1input{
+    margin-left: 18%;
+}
+#name2input{
+    margin-left: 18%;
+}
