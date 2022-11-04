@@ -1,24 +1,18 @@
-function loadPokemon() {
-    var xhttp = new XMLHttpRequest();
-        
-    xhttp.onreadystatechange = function() {
+var xhttp = new XMLHttpRequest();
+
+let pokemon = document.getElementById("pokemon");
+
+for(let i = 1; i<=151;i++){
+    loadPokemon();
+}
+
+function loadPokemon(){
+    xhttp.onreadystatechange=function() {
         if(this.readyState == 4 && this.status == 200){
-            document.getElementById("erg").innerHTML = this.responseText;
-        }
+            let pokemon = JSON.parse(this.responseText);
+            console.log = pokemon;
+        }   
     }
-
-    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/ditto/", true);
-
+    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/"+i, true);
     xhttp.send();
-}
-
-function main(){
-    let name = document.getElementById('name').value;
-    loadPokemon();    
-}
-
-function printPokemon(){
-    pokemon.innerHTML=('<p>Name: '+pokemon.name+'</p>');
-    pokemon.innerHTML=('<p>Name: '+pokemon.name+'</p>');
-    pokemon.innerHTML=('<p>Name: '+pokemon.name+'</p>');
 }
