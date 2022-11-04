@@ -11,7 +11,7 @@ function loadPokemon(){
 
             pokemon.innerHTML = '<img src="'+currentPokemon.sprites.front_default+'"><br>';
             pokemon.innerHTML += 'Name: '+currentPokemon.name+'<br>';
-            pokemon.innerHTML += 'Type: '+currentPokemon.type+'<br>';
+            pokemon.innerHTML += 'Type: '+currentPokemon.types[0].type.name+'<br>';
             pokemon.innerHTML += '<br>';
         }
     }
