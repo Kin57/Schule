@@ -1,14 +1,14 @@
 let output = document.getElementById("output");
 let button = document.getElementById("button");
 
-let life1 = 100;
-let attack1 = 10;
-let life2 = 100;
-let attack2 = 10;
+let life1 = 10;
+let attack1 = 1;
+let life2 = 10;
+let attack2 = 1;
 
 function newFight() {
-    life1 = 100;
-    life2 = 100;
+    life1 = 10;
+    life2 = 10;
     button.innerHTML = '<button onclick="nextAttack();">Next Attack</button>';
     
     output.innerHTML = '<div id="battlefield"></div>';
