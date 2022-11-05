@@ -7,7 +7,7 @@ body{
     src: url(./perpetua.woff);
 }
 h1{
-    margin-left: 45%;
+    margin-left: 45%; 
 }
 
 #button{
@@ -36,7 +36,7 @@ h1{
 }
 
 #player1{
-    margin-left: 14%;
+    margin-left: 9%;
     font-weight: bold;
 }#player2{
     margin-left: 26%;
@@ -51,7 +51,7 @@ h1{
 #winner{
     position: absolute;
     left: 46.5%;
-    top: 51%;
+    top: 66%;
     width: 7%;
     display: flex;
     justify-content: center;
