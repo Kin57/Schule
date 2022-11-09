@@ -1,0 +1,25 @@
+SUPPORT
+ - hält die Teile die den Boden nicht berühren
+ - Tree is effizienter weil weniger Material benützt
+
+INFILL
+ - macht die Struktur stabiler
+ - Tri-Hexagonal stabiler als cubic
+ - prozent höher is stabiler
+
+MATERIALIEN
+ - PLA
+   - basiert auf Milchsäure
+   - biologisch abbaubar 
+   - Schmelzpunkt zwischen 150-160°C
+ - PetG
+   - wird für PET-Flaschen verwendet
+   - Schmelzpunkt
+ - TPU
+   - elastisch
+   - 190-230°C
+ - Nylon
+   - transparent
+   - 212°C
+ - ABS
+   - 

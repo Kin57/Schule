@@ -9,7 +9,7 @@ function loadPokemon(){
             let currentPokemon = JSON.parse(this.responseText);
             console.log(currentPokemon);
 
-            pokemon.innerHTML = '<img src="'+currentPokemon.sprites.front_default+'"><br>';
+            pokemon.innerHTML = '<img alt="" src="'+currentPokemon.sprites.front_default+'"><br>';
             pokemon.innerHTML += 'Name: '+currentPokemon.name+'<br>';
             pokemon.innerHTML += 'Type: '+currentPokemon.types[0].type.name+'<br>';
             pokemon.innerHTML += '<br>';

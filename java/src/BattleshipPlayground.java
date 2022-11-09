@@ -12,8 +12,8 @@ public class BattleshipPlayground {
             printBattlefield(battlefield);
 
             String position = sc.nextLine();
-            int x = position.toLowerCase().charAt(0) - 'a' ;
-            int y = position.charAt(1);
+            int x = position.toLowerCase().charAt(0);
+            int y = position.charAt(1) - 'a' ;
 
             System.out.println(x + ", " + y);
         }
