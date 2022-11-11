@@ -1,15 +1,31 @@
-#imgPosition1 {
-    width: 12%;
+body{
+    background-image: url("wiese.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vw;
 }
-#imgPosition2 {
-    width: 22%;
+
+h1{
+
 }
-#imgPosition3 {
-    width: 32%;
+
+#imgPosition1 {width: 10%}
+
+#imgPosition2 {width: 20%}
+
+#imgPosition3 {width: 30%}
+
+#imgPosition4 {width: 20%}
+
+#imgPosition5 {width: 10%}
+
+#pictures {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-#imgPosition4 {
-    width: 22%;
-}
-#imgPosition5{
-    width: 12%;
+
+#right {
+
 }
