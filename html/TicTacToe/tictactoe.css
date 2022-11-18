@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;    
+}
+
+.box {
+    background: #444;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+    height: 10vw;
+}
+
+
+
+

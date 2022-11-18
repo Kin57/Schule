@@ -23,17 +23,17 @@ function displayPictures() {
 }
 
 function left() {
-    counter--;
-    displayPictures();
-    if (counter < 0) {
-        counter = NUMBER_OF_IMG;
-    }
-}
-
-function right() {
     counter++;
-    displayPictures();
     if (counter > NUMBER_OF_IMG) {
         counter = 0;
     }
+    displayPictures();
+}
+
+function right() {
+    counter--;
+    if (counter < 0) {
+        counter = NUMBER_OF_IMG;
+    }
+    displayPictures();
 }

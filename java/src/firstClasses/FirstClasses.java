@@ -9,7 +9,15 @@ public class FirstClasses {
         buildCat(myCat);
         do {
             myCat.fight();
-        }while (myCat.getNumberOfLegs() == 4);
+        }while (myCat.getIsCow() == false);
+        myCat.petCat();
+    }
+
+    private static void petCat(Cat myCat) {
+        System.out.println("You attempt to pet the cat.");
+        if(myCat.getMood() >= 25){
+            myCat.raiseMood(5);
+        }
     }
 
     private static void buildCat(Cat myCat) {
@@ -20,6 +28,7 @@ public class FirstClasses {
         myCat.setName(sc.nextLine());
         System.out.print("Fur Color: ");
         myCat.setFurColor(sc.nextLine());
-        myCat.setNumberOfLegs();
+        myCat.resetMood();
+        myCat.resetNumberOfLegs();
     }
 }
