@@ -8,19 +8,31 @@
     <script src="tictactoe.js"></script>
 </head>
 
-<body>
-<h1>Tic Tac Toe</h1>
+<body id="body">
+<div id="headline">
+    <h1 class="redT">T</h1><h1 class="text">ic </h1>
+    <h1 class="blueT">T</h1><h1 class="text">ac </h1>
+    <h1 class="redT">T</h1><h1 class="text">oe </h1>
+</div>
+<button id="newGameButton" onclick="reset()">New Game</button>
+<div id="players">
+    <input id="player1Name" type="text" onchange="setPlayer1Name()" value="Player 1">
+    <div id="player1Score">0</div>
+    <div style="width: 20%"></div>
+    <div id="player2Score">0</div>
+    <input id="player2Name" type="text" onchange="setPlayer2Name()" value="Player 2">
+</div>
 <div class="game-board">
     <div class="box" id="0, 0" onclick="checkBox(0, 0)"></div>
-    <div class="box" id="0, 1" onclick="checkBox(0, 1)"></div>
+    <div class="box verticalLine" id="0, 1" onclick="checkBox(0, 1)"></div>
     <div class="box" id="0, 2" onclick="checkBox(0, 2)"></div>
 
-    <div class="box" id="1, 0" onclick="checkBox(1, 0)"></div>
-    <div class="box" id="1, 1" onclick="checkBox(1, 1)"></div>
-    <div class="box" id="1, 2" onclick="checkBox(1, 2)"></div>
+    <div class="box horizontalLine" id="1, 0" onclick="checkBox(1, 0)"></div>
+    <div class="box horizontalLine verticalLine" id="1, 1" onclick="checkBox(1, 1)"></div>
+    <div class="box horizontalLine" id="1, 2" onclick="checkBox(1, 2)"></div>
 
     <div class="box" id="2, 0" onclick="checkBox(2, 0)"></div>
-    <div class="box" id="2, 1" onclick="checkBox(2, 1)"></div>
+    <div class="box verticalLine" id="2, 1" onclick="checkBox(2, 1)"></div>
     <div class="box" id="2, 2" onclick="checkBox(2, 2)"></div>
 </div>
 </body>
