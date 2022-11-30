@@ -44,7 +44,6 @@ function showWinner() {
         document.getElementById("player2Score").innerHTML = player2WinCounter;
         isOver = true;
     } else if (checkWinner() === 2) {
-        document.getElementById("body").innerHTML += '<div id="winnerPlayer1">'+player1+' wins</div>'
         alert(player1 + ' wins');
         player1WinCounter++;
         document.getElementById("player1Score").innerHTML = player1WinCounter;
