@@ -56,10 +56,10 @@ public class Fraction {
     }
 
     public void shorten() {
-        if(this.numerator % this.denominator == 0){
-            int temp = this.numerator / this.denominator;
-            this.numerator /= temp;
-            this.denominator /= temp;
+        for(int i = 0; i<= Math.max(this.numerator, this.denominator)* Math.max(this.numerator, this.denominator); i++){
+            if(this.numerator % i == 0 ||this.denominator % i == 0){
+                
+            }
         }
     }
 

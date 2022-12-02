@@ -8,6 +8,8 @@ let isOver = false;
 
 function checkBox(x, y) {
     if (gameMatrix[x][y] !== 0 || isOver == true) {
+        reset();
+        checkBox(x, y);
         return;
     }
 
