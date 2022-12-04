@@ -1,0 +1,10 @@
+- cisco packet tracer installieren
+- mit google account anmelden
+- Netzwerk aufbauen
+  - Server, Switch, internetfähigen Router und ein Endgerät 
+  - Server, und router an mit Switch verbinden
+  - Endgerät verbindet sich automatisch mit W-LAN
+  - Server IP Adressese geben
+  - whats my ip
+  - endgerät ip adresse geben
+  
