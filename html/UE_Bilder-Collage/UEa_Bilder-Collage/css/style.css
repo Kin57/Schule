@@ -45,3 +45,11 @@ main {
     display: block;
 	width: 100%;
 }
+.row{
+	display: flex;
+
+}
+.row img{
+	width: 28%;
+	margin: 1%;
+}
