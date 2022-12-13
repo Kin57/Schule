@@ -4,15 +4,6 @@ public class test {
     public static void main(String[] args) {
         Random random = new Random();
         System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
-        System.out.println(random.nextInt(10) + 1);
         double temp = 0.5;
         String abc = "123";
         int notTemp = Integer.parseInt(abc);
