@@ -26,6 +26,18 @@ header h1 {
 	font-weight: normal;
 }
 
+/* button */
+#button{
+	display: flex;
+	justify-content: center;
+}
+#button button, p{
+	border: none;
+	background-color: rgb(34, 34, 34);
+	color: #fff;
+	font-size: 20px;
+}
+
 /* galerie */
 main {
 	width: 70%;
@@ -47,7 +59,7 @@ main {
 }
 .row{
 	display: flex;
-
+	justify-content: center;
 }
 .row img{
 	width: 28%;
