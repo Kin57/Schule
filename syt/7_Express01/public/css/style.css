@@ -1,0 +1,72 @@
+/* author: HTL Leonding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Agency FB';
+    font-size: 150%;
+    background-color: #CDE7DF;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* header */
+header {
+    background-color: #6BBDA4;
+    color: #1E3E34;
+    padding: 2% 0;
+    display: flex;
+}
+header h1 {
+    flex: 3;
+    text-align: center;
+    margin: 0;
+}
+header a {
+    flex: 1;
+    margin: 1% 5% 1% 0;
+    padding: 1%;
+    display: block;
+    text-align: center;
+    background-color: #CDE7DF;
+    color: #000;
+    text-decoration: none;
+}
+header a:hover {
+    background-color: #aae2d1;
+}
+
+
+
+/* main */
+main {
+    padding: 2%;
+}
+main a {
+    display: inline-block;
+    margin-right: 2em;
+    color: #1E3E34;
+    background-color: #6BBDA4;
+    padding: 1em;
+    text-decoration: none;
+}
+main a:hover {
+    background-color: #479E84;
+}
+
+
+
+/* galerie */
+main #galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main #galery img {
+    display: block;
+    width: 30%;
+    margin-bottom: 3%;
+}
+
