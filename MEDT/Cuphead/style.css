@@ -1,0 +1,73 @@
+body{
+    background-image: url(img/Menu.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#pressAnyButton{
+    background-image: url(img/pressAnyButton.png) ;
+}
+
+/* Design Geschichte */
+#GeschichteBackground{
+    background-image: url(img/Menu2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+.textBox{
+    color: white;
+    margin: 10%;
+    font-size: larger;
+}
+
+
+/* Design Menü */
+#menu{
+    margin: 0;
+    padding: 0%;
+    visibility: visible;
+    display: flex;
+}
+
+.menuItem{
+    padding: 2%;
+    width: 20%;
+    height: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+    font-size: xx-large;
+    color: white;
+
+    animation-name: goInvisble;
+    animation-duration: .5s;
+    
+    @keyframes goInvisible {
+        from {visibility: visible;}
+        to {visibility: hidden;}
+    }
+}.menuItem:hover{
+    color: wheat;
+}
+
+a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+#button{
+    background: url(/img/menu-button.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+}
