@@ -1,8 +1,7 @@
 document.getElementById('content').innerHTML += '<div id="contentdiv"></div>'
 let content = document.getElementById('contentdiv');
 let counter = 1;
-content.innerHTML = '<div id="button"></div>';
-let button = document.getElementById("button");
+content.innerHTML += '<div id="button"></div>';
 let i = 0;
 
 showMore()
@@ -20,6 +19,6 @@ function showMore() {
             img.innerHTML += `<img class="column${j}" src="img/city${counter}.jpg">`;
             counter++;
         }
+        i++
     }
-    i++
 }
