@@ -1,9 +1,22 @@
+/****BACKGROUND****/
+
+body div{
+    z-index: 1;
+}
+#background{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 body {
-    background: url("img/forest-floor.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
+
+
+/****CARDS****/
 #content {
     display: flex;
     justify-content: center;
@@ -32,26 +45,4 @@ body {
 
 .card p {
     color: #AAAAAA;
-}
-
-/*
-.price {
-    color: grey;
-    font-size: 22px;
-}
-
-.card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-.card button:hover {
-    opacity: 0.7;
 }
