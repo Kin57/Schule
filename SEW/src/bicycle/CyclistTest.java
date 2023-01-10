@@ -1,4 +1,3 @@
-package at.htlleonding.bicycles;
 
 public class CyclistTest {
     public static void main(String[] args) {

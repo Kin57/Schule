@@ -1,0 +1,41 @@
+ipconfig
+
+ipconfig /all
+    -mehr details
+
+nslookup www.orf.at
+    -macht dns server stuff
+    -gibt ip Adressen zurück
+
+ping -t www.orf.at
+    -pingt bis zum abbruch
+
+tracert www.orf.at
+    -listet alle zwischenpunkte auf
+    -Ausgabe
+	Routenverfolgung zu www.google.com [142.250.185.132]
+	über maximal 30 Hops:
+	
+	  1     2 ms     1 ms     1 ms  172.17.223.254
+	  2     1 ms    <1 ms     1 ms  ns4.htl-leonding.ac.at [10.191.16.254]
+	  3     2 ms     2 ms     2 ms  193.170.158.254
+	  4     1 ms     *        1 ms  78.104.53.72
+	  5    40 ms     1 ms     *     78.104.55.254
+	  6     1 ms     *        1 ms  linz1.aco.net [193.171.22.49]
+	  7     *        *        *     Zeitüberschreitung der Anforderung.
+	  8     5 ms     *        5 ms  aconet-ias-geant-gw.vie.at.geant.net [83.97.88.1]
+	  9    16 ms    16 ms    16 ms  ae8.mx1.mil2.it.geant.net [62.40.98.188]
+	 10    16 ms    16 ms    16 ms  72.14.203.32
+	 11    23 ms    23 ms    23 ms  108.170.245.84
+	 12    23 ms    23 ms    23 ms  142.251.234.16
+	 13    22 ms    41 ms    33 ms  108.170.226.2
+	 14    23 ms    23 ms    23 ms  108.170.252.65
+	 15    22 ms    23 ms    22 ms  142.250.236.51
+	 16    22 ms    22 ms    22 ms  fra16s50-in-f4.1e100.net [142.250.185.132]
+	
+	Ablaufverfolgung beendet.
+
+ip look up seiten
+    -gibt die physikalische location zurück
+
+
