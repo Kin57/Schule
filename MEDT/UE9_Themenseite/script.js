@@ -19,9 +19,9 @@ for(let i = 0; i < MUSHROOM_ARRAY.length; i++){
 
 function newCard(name, imgSrc, isPoisonous, taste, exampleDish, i){
     console.log('newCard()')
-    let color = green
+    let color = "green"
     if(isPoisonous){
-        color = red
+        color = "red"
     }
     document.getElementById('row'+i).innerHTML += '' +
         '<div class="card" id="img'+ i +'">' +
